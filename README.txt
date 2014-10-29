@@ -4,7 +4,7 @@ Contributors: Aryan Duntley, dunar21
 
 Plugin Name: WPR Halloween Scare Popup
 
-Donate link: http://worldpressrevolution.com/wpr_myplugins/wpr-halloween-scare/
+Donate link: http://worldpressrevolution.com/wpr_myplugins/wpr-wordpress-halloween-scare-plugin/
 
 Plugin URI: http://wordpress.org/extend/plugins/
 
