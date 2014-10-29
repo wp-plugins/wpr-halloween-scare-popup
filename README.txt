@@ -35,7 +35,7 @@ NOTE:  This plugin was developed for tutorial purposes with [WorldPress Revoluti
 
 This plugin creates a shortcode that when called, enqueues a javascript file that generates a popup that mimics a white noise tv static and then displays a scary, Halloween themed image/gif part way through the duration of the effect.  
 
-Plugin site: [WorldpressRevolution](http://worldpressrevolution.com/wpr_myplugins/wpr-halloween-scare/ "Aryan Duntley's Worldpress Revolution wordpress tutorials")
+Plugin site: [WorldpressRevolution](http://worldpressrevolution.com/wpr_myplugins/wpr-wordpress-halloween-scare-plugin/ "Aryan Duntley's Worldpress Revolution wordpress tutorials")
 
 
 Demo: [See Demo](http://republicofus.com/halloween-scare/ "Aryan Duntley's WPR Halloween Scare Demo")
