@@ -3,10 +3,10 @@
 Plugin Name: WPR Halloween Scare
 Plugin URI: https://wordpress.org/plugins/wpr-halloween-scare-popup/
 Description: Fun Halloween scare for your website.
-Version: 1.0.4
+Version: 1.0.5
 Author: Aryan Duntley
 Author URI: http://worldpressrevolution.com/wpr_myplugins/wpr-wordpress-halloween-scare-plugin/
-License: GPLv2 or later
+License: GPLv2 or later 
 */
 //http://www.videocopilot.net/tutorials/demon_face_warp/
 function wpr_hs_addscripts(){

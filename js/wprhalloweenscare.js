@@ -1,6 +1,6 @@
 var sg = new Image();
 var st = new Image();
-var sa = new Audio();
+var sa = new Audio(); 
 var imwide, imhite, lft, tpo;
 
 jQuery(document).ready(function(){

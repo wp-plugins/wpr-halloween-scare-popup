@@ -8,7 +8,7 @@ Donate link: http://worldpressrevolution.com/wpr_myplugins/wpr-wordpress-hallowe
 
 Plugin URI: http://wordpress.org/extend/plugins/
 
-Author URI: http://worldpressrevolution.com/
+Author URI: http://worldpressrevolution.com/ 
 
 Tags: halloween plugin, halloween theme, scary plugin
 
@@ -16,7 +16,7 @@ Requires at least: 3.0.1
 
 Tested up to: 4.1
 
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 
 License: GPLv2 or later
 
