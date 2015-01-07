@@ -2,21 +2,21 @@
 
 Contributors: Aryan Duntley, dunar21
 
-Plugin Name: Gravity Forms Mass Import
+Plugin Name: WPR Halloween Scare Popup
 
-Donate link: http://aryanduntley.com/plugins/gravity-forms-mass-import
+Donate link: http://worldpressrevolution.com/wpr_myplugins/wpr-wordpress-halloween-scare-plugin/
 
-Plugin URI: http://wordpress.org/extend/plugins/gravity-forms-mass-import/
+Plugin URI: http://wordpress.org/extend/plugins/
 
-Author URI: http://aryanduntley.com/
+Author URI: http://worldpressrevolution.com/ 
 
-Tags: gravity forms, gravity forms import, import, csv import, gravity forms entries, gravity forms entries import, entries import, mass import, wordpress csv import, csv, csv import, import csv gravity forms 
+Tags: halloween plugin, halloween theme, scary plugin
 
 Requires at least: 3.0.1
 
-Tested up to: 3.9.1
+Tested up to: 4.1
 
-Stable tag: 1.5
+Stable tag: 1.0.5
 
 License: GPLv2 or later
 
@@ -24,35 +24,21 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
 
-Allows for mass import of gravity forms entries from a CSV file. 
+Creates a scary, staticy Halloween popup.
 
 
 
 == Description ==
 
-NOTE:  The earliest version of Gravity Forms this plugin has been tested with is v1.6.3 and the latest is v1.6.12.
+NOTE:  This plugin was developed for tutorial purposes with [WorldPress Revolution's](http://worldpressrevolution.com/creating-scary-halloween-popup/ "WorldPress Revolution Wordpress Tutorials") Scary Halloween pop up tutorial.  This plugin will not be supported or updated.  It is free for any/all to use, customize or do with as they please.  Enjoy.
 
 
+This plugin creates a shortcode that when called, enqueues a javascript file that generates a popup that mimics a white noise tv static and then displays a scary, Halloween themed image/gif part way through the duration of the effect.  
 
-This plugin allows Gravity Forms users to import entries from a CSV file
-
-
-
-A new item will appear in you gravity forms side menu called "Import Entries".  There you will be provided with a selection box to pick which form you would like to import into.  Once selected, you will be provided with the "Labels" of your form that will be needed as the headers of your CSV file.  Make sure that you use those exactly.  If you have erroneous or unavailable headers in your CSV file, an error will be generated.  Please note, that this plugin is not designed to work with the gravity forms post fields or pricing/product fields.
-
-A new feature allows users to specify the date a record (or entry) is listed as having been created.  To do this, you must create an extra field in your form editor titled "actualPostDate".  You should make this field a single line text field.  Make sure that "actualPostDate" is included in your headers as will be indicated in the required headers list when you select your form before csv entry.  Finally, the format for entry is the MYSQL date time format (2005-08-05 10:41:13).
-
-This plugin was created for users who wish to use Gravity Forms as an online database/data entry option and wish to import data from a previous system.
+Plugin site: [WorldpressRevolution](http://worldpressrevolution.com/wpr_myplugins/wpr-wordpress-halloween-scare-plugin/ "Aryan Duntley's Worldpress Revolution wordpress tutorials")
 
 
-
-
-
-Plugin site: [Aryan Duntley](http://aryanduntley.com/gravity-forms-mass-import "Aryan Duntley Web Dev")
-
-
-
-Donations welcome.  If you find this plugin useful and would maybe like to request more features or hope for future updates and optimizations, please help me eat!  I find it takes a lot of pizza to code, something about thinking and calories...
+Demo: [See Demo](http://republicofus.com/halloween-scare/ "Aryan Duntley's WPR Halloween Scare Demo")
 
 
 
@@ -60,19 +46,25 @@ Donations welcome.  If you find this plugin useful and would maybe like to reque
 
 
 
-1. Upload `gravity-forms-mass-import` folder to the `/wp-content/plugins/` directory
+1. Upload `wpr-halloween-scare` folder to the `/wp-content/plugins/` directory
 
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
+3. Use shortcode: [wprscare]
+
+4. Attribute "page" defines whether you want to specify a page/post type conditional.  Available values are (home-default, home-static, blog, single, page, page-template), default is none and effect occurs when shortcode is called.
+
+5. Attribute "pagevalue" defines the type relative to the conditional above.  Available values are the post id, slug or title relative to the "page" type conditional.
 
 
+6. Attribute "beginin" defines how many seconds to wait before effect takes place.  Default is 3.
+
+7. Attribute "imwidth" is available only if you use a custom gif or image in place of the gif used in the imgs folder of this plugin.  You can replace it with any image you want (as long as you provide the same name).  If you do so, you must supply the image width in order for it to display correctly and in the correct location relative to the screen width.
 
 
-== Frequently Asked Questions ==
+8. Attribute "imheight" is available only if you use a custom gif or image in place of the gif used in the imgs folder of this plugin.  You can replace it with any image you want (as long as you provide the same name).  If you do so, you must supply the image height in order for it to display correctly and in the correct location relative to the screen height.
 
-
-
-Since this is the first release, there are no frequently asked questions.  Ask away and this page could be filled up!  Donations motivate responses...
+9. Attribute "endafter" defines when, in seconds, you want the animation to end.  By default the value is set to 0 and the effect ends when the audio end event listener is called.  However, with many mobile devices, audio is only available upon user action.  I did not script this to take all of that audio on mobile nonsense, so in order to overcome the problem, you may define an endafter parameter so the effect is removed in mobile devices.
 
 
 
@@ -80,40 +72,17 @@ Since this is the first release, there are no frequently asked questions.  Ask a
 
 
 
-1. Simple enough.
+1. That's all.
 
 
 
 
 
 == Changelog ==
-= 1.2=
 
-*Will now upload large text into proper database table
+= 1.0 =
 
-*Fixed issue with a query that was querying entire table instead of just a single value
-
-*added support for setting date of creation for an entry
-
-= 1.1 =
-
-*Had a user who was having difficulties with the Ajax call. Using wp_ajax now.  Hope this helps.
-
-= 1.0.5 =
-
-*Changed the automated delimiter search.  All delimiters must be commas and all fields must be encased in double quotes.
-
-= 1.0.1 =
-
-* Added necessary instructions
-
-* Some minor code optimizations
-
-
-
-= 1.0.0 =
-
-* Initial version.
+* Only version.
 
 
 
